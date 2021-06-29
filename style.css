@@ -12,7 +12,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 900px;
   height: 100%;
   border-radius: 10px;
 }
@@ -39,7 +39,7 @@ section{
 }
 img{
   height: 30px;
-  width: 45px
+  width: 50px
 }
 h1{
   font-family: 'Big Shoulders Display', cursive;
@@ -69,4 +69,16 @@ button{
 
 .luxury > button{
   color: hsl(179, 100%, 13%);
+}
+
+@media(max-width: 1000px){
+  .layout-container{
+    flex-direction: column;
+  }
+  .sedan{
+    border-radius: 8px 8px 0 0;
+  }
+  .luxury{
+    border-radius: 0 0 8px 8px;
+  }
 }
