@@ -21,7 +21,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px;
+  padding: 45px;
   width: 250px;
   height: 400px;
   color: hsla(0, 0%, 100%, 0.75);
@@ -55,8 +55,12 @@ button{
   border-radius: 45px;
   width: 150px;
   height: 50px;
+  font-size: 15px;
+  letter-spacing: 1px;
   border: hsla(0, 0%, 100%, 0.75);
+  background: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
+  cursor: pointer;
 }
 
 .sedan > button{
@@ -71,6 +75,25 @@ button{
   color: hsl(179, 100%, 13%);
 }
 
+/* HOVER EFFECTS */
+.sedan > button:hover{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv> button:hover{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury > button:hover{
+  background-color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+  color: hsla(0, 0%, 100%, 0.75);
+  border: hsla(0, 0%, 100%, 0.75) 2px solid;
+}
+
+/* MEDIA QUERY */
 @media(max-width: 1000px){
   body{
     height: initial;
